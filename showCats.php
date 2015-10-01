@@ -10,7 +10,8 @@ function getFiles($dirloc)
     //return array
     $filenames = array();
     $files = scandir($dirloc);
-    foreach($files as $fn)
+    //foreach($files as $fn)
+    foreach($searchfor as $s)
     {
         $fn = trim(strtolower($fn));
         if($fn=="." || $fn==".." || $fn=="thumbs.db")
@@ -40,7 +41,7 @@ function getFiles($dirloc)
             foreach($catfiles as $c)
             {
                 $r1 = "<tr><td>";
-                $r2 = "<img src='".$c."'>";
+                $r2 = "<img src='..\catsimg\".$c."'>";
                 $r3 = "</td></tr>";
             }
             ?>
