@@ -1,12 +1,22 @@
 <?php
+//lol was playing a game of hearthstone
+//xmas tree paladin vs mage
+//computer lagged out and my turn 7 was skipped
+//still won
+//deck op af lol
 
-function cleanData()
+function cleanData($mydata, $mydata2)
 {
-    $name = "Frank";
-    return $name;
+    $abc = "";
+    //$name = "Frank";
+    $name = strtolower($mydata);
+    $name2 = strtoupper($mydata2);
+    $name3 = $name." ".$name2;
+    //return $name;
+    return $name3;
 }
 
-$x = cleanData();
-echo "X is ".$x;
-
+$x = cleanData("FRANK", "jones");
+//echo "X is ".$x;
+echo "<h1>X is ".$x."</h1>".$name;
 ?>
