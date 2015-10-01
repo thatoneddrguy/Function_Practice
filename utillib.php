@@ -26,4 +26,11 @@ function addSomeData($datax)
     return $temp;
 }
 
+function callMe($num)
+{
+    echo "Running Call Me<br>";
+    callMe(1);
+}
+
+//callMe(1); //recursive obv
 ?>
