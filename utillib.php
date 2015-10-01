@@ -32,5 +32,13 @@ function callMe($num)
     callMe(1);
 }
 
+function test_input($data)
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+
 //callMe(1); //recursive obv
 ?>
