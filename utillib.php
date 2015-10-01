@@ -19,4 +19,11 @@ function cleanData($mydata, $mydata2)
 $x = cleanData("FRANK", "jones");
 //echo "X is ".$x;
 echo "<h1>X is ".$x."</h1>".$name;
+
+function addSomeData($datax)
+{
+    $temp = $datax." XXXXX ";
+    return $temp;
+}
+
 ?>
